@@ -19,6 +19,7 @@
 <span></span>
 <script>
 var a = true;
+  var b = 0
 $("button").click(function() {
   $("span").empty()
   $("span").append("= 32")
@@ -29,6 +30,13 @@ $("button").click(function() {
     $("#b").text("4x8")
     $("#a").text("8x4")
   }
+  if(b>1)
+    $("span").append(" sicher?")
+  if(b>3)
+    $("span").append(" Wirklich?")
+  if(b>5)
+    $("span").append(" Ist das das Richtige?")
+  b++
   a = !a
 })
 </script>
