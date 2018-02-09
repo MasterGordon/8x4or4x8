@@ -12,14 +12,22 @@
 </style>
 </head>
 <body>
-<button>8x4</button>
-<button>4x8</button>
+<button id="a">8x4</button>
+<button id="b">4x8</button>
 <br>
 <span></span>
 <script>
+var a = false;
 $("button").click(function() {
   $("span").empty()
   $("span").append("= 32")
+  if(a){
+    $("a").text("4x8")
+    $("b").text("8x4")
+  } else {
+    $("b").text("4x8")
+    $("a").text("8x4")
+  }
 })
 </script>
 <body>
